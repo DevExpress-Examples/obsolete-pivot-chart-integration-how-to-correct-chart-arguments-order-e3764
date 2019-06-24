@@ -6,6 +6,9 @@
 * [Default.aspx.cs](./CS/WebSite/Default.aspx.cs) (VB: [Default.aspx.vb](./VB/WebSite/Default.aspx.vb))
 <!-- default file list end -->
 # (Obsolete) Pivot Chart Integration - How to correct chart arguments order 
+<!-- run online -->
+**[[Run Online]](https://codecentral.devexpress.com/e3764)**
+<!-- run online end -->
 
 
 <p>Update: Starting with version 15.2, it is possible to use the <strong>AxisBase.QualitativeScaleComparer </strong>property to sort values manually. Refer to the <a href="https://www.devexpress.com/Support/Center/p/S31660">S31660: Qualitative Scale - Provide custom sorting</a> thread for additional information. </p>
