@@ -1,23 +1,3 @@
-<!-- default badges list -->
-![](https://img.shields.io/endpoint?url=https://codecentral.devexpress.com/api/v1/VersionRange/134061723/14.1.3%2B)
-[![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/E3764)
-[![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
-<!-- default badges end -->
-<!-- default file list -->
-*Files to look at*:
+⛔ DEPRECATED. Starting with v15.2, it is possible to use the [AxisBase.QualitativeScaleComparer](https://docs.devexpress.com/CoreLibraries/DevExpress.XtraCharts.AxisBase.QualitativeScaleComparer) property to sort values manually. Refer to the following topic for additional information:
 
-* [Default.aspx](./CS/WebSite/Default.aspx) (VB: [Default.aspx](./VB/WebSite/Default.aspx))
-* [Default.aspx.cs](./CS/WebSite/Default.aspx.cs) (VB: [Default.aspx](./VB/WebSite/Default.aspx))
-<!-- default file list end -->
-# (Obsolete) Pivot Chart Integration - How to correct chart arguments order 
-<!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/e3764)**
-<!-- run online end -->
-
-
-<p>Update: Starting with version 15.2, it is possible to use the <strong>AxisBase.QualitativeScaleComparer </strong>property to sort values manually. Refer to the <a href="https://www.devexpress.com/Support/Center/p/S31660">S31660: Qualitative Scale - Provide custom sorting</a> thread for additional information. </p>
-<p><br>If the pivot grid control has empty cells the order of arguments in the attached chart can differ from the order of pivot grid columns. The problem appears because the XtraCharts control sorts data on the Series level. E.g in this example there are 2 different series: "2012" and "2013". Each series contains points corresponding to three arguments: 2012: Aaa, Ccc, Ddd and 2013: Aaa, Bbb, Ddd. The resulting axis scale will contain 4 arguments: Aaa, Bbb, Ccc, Ddd. Note that a relative order of arguments B and C is not set anywhere, so argument C is placed at the first position, because itis provided by the first series. To solve the issue it is necessary to add a custom series to the chart control. This series should provide the correct sort order by using the SeriesBase.SeriesPointsSorting feature.</p>
-
-<br/>
-
-
+- [AxisBase.QualitativeScaleComparer](https://docs.devexpress.com/CoreLibraries/DevExpress.XtraCharts.AxisBase.QualitativeScaleComparer)
